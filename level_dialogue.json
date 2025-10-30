@@ -1,0 +1,88 @@
+{
+    "beginning": [
+        {
+            "dialogue": "",
+            "action1": "",
+            "action2": ""
+        }
+    ],
+    "level1": [
+        {
+            "dialogue": "",
+            "action1": "",
+            "action2": ""
+        }
+    ],
+
+    "level2": [
+        {
+            "dialogue": "",
+            "action1": "",
+            "action2": ""
+        }        
+    ],
+
+    "level3": [
+        {
+            "dialogue": "",
+            "action1": "",
+            "action2": ""
+        }
+    ],
+    
+     "level4": [
+        {
+            "dialogue": "",
+            "action1": "",
+            "action2": ""
+        }
+    ],       
+    
+    "level5": [
+        {
+            "dialogue": "",
+            "action1": "",
+            "action2": ""
+        }
+    ],
+
+    "level6": [
+        {
+            "dialogue": "",
+            "action1": "",
+            "action2": ""
+        }
+    ],
+
+    "bad_end": [
+        {
+            "dialogue": "",
+            "action1": "",
+            "action2": ""
+        }
+    ],
+
+    "normal_end": [
+        {
+            "dialogue": "",
+            "action1": "",
+            "action2": ""
+        }
+    ],
+
+    "good_end": [
+        {
+            "dialogue": "",
+            "action1": "",
+            "action2": ""
+        }
+    ],
+
+    "perfect_end": [
+        {
+            "dialogue": "",
+            "action1": "",
+            "action2": ""
+        }
+    ]
+}

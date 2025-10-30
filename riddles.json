@@ -1,0 +1,374 @@
+{
+  "jokes": [
+        {
+        "riddle": "Why do the French only have one egg for breakfast?",
+        "answer": "Because one egg is un oeuf! Get it? It means 'one egg' in French, but it sounds like 'enough!' Ha ha ha!"
+        },
+        {
+        "riddle": "Why did the math book look sad?",
+        "answer": "Because it had too many problems."
+        },
+        {
+        "riddle": "What kind of tree can you carry in your hand?",
+        "answer": "A palm tree."
+        },
+        {
+        "riddle": "Where would you take a sick boat?",
+        "answer": "To the dock."
+        },
+        {
+        "riddle": "A pet shop owner had a parrot with a sign on its cage that said \"Parrot repeats everything it hears.\" Davey bought the parrot and for two weeks he spoke to it and it didn't say a word. He returned the parrot but the shopkeeper said he never lied about the parrot. How can this be?",
+        "answer": "The parrot was deaf."
+        },
+        {
+        "riddle": "You live in a one story house made entirely of redwood. What color would the stairs be?",
+        "answer": "What stairs? You live in a one-story house."
+        },
+        {
+        "riddle": "What kind of lion never roars?",
+        "answer": "A dandelion."
+        },
+        {
+        "riddle": "When is a door not a door?",
+        "answer": "When it is ajar."
+        },
+        {
+        "riddle": "A boy fell off a 30-foot ladder but didn’t get hurt. How is this possible?",
+        "answer": "He fell off the bottom step."
+        },
+        {
+        "riddle": "Two fathers and two sons went fishing. Each caught exactly one fish and brought it home. There were only three fish in total. How is this possible?",
+        "answer": "They were a grandfather, father, and son. The father is both a father and a son."
+        },
+        {
+        "riddle": "This statement is false. Is the statement true or false?",
+        "answer": "Paradox."
+        },
+        {
+        "riddle": "A drawer contains 10 blue socks and 10 red socks. Without looking, how many socks must you take out to ensure you have a matching pair?",
+        "answer": "3 socks."
+        },
+        {
+        "riddle": "You’re in a prison with 2 doors. One leads to freedom, the other to execution. There are 2 guards, one by each door. One guard always tells the truth, the other always lies. You don’t know which is which. You can ask one question to one guard to determine the door to freedom. What do you ask?",
+        "answer": "\"If I asked the other guard which door leads to freedom, what would he say?\" Then choose the opposite door."
+        },
+        {
+        "riddle": "A man was walking in the rain. He didn’t have an umbrella and he wasn’t wearing a hat. His clothes got soaked, yet not a single hair on his head got wet. How could this happen?",
+        "answer": "He was bald."
+        },
+        {
+        "riddle": "A cowboy rides into town on Friday, stays three days, and leaves on Friday. How is this possible?",
+        "answer": "The horse's name is Friday."
+        },
+        {
+        "riddle": "What is louder than a dinosaur snoring?",
+        "answer": "Two dinosaurs snoring."
+        },
+        {
+        "riddle": "Four men were in a boat on the lake. The boat turns over, and all four men sink to the bottom of the lake, yet not a single man got wet! Why?",
+        "answer": "All of them were married, so none were single men."
+        },
+        {
+        "riddle": "What two things can you never eat for breakfast?",
+        "answer": "Lunch and dinner."
+        },
+        {
+        "riddle": "What has a bottom at the top?",
+        "answer": "Your legs."
+        },
+        {
+        "riddle": "If you drop a yellow hat in the Red Sea, what does it become?",
+        "answer": "Wet."
+        },
+        {
+        "riddle": "How far will a blind dog walk into a forest?",
+        "answer": "Halfway. After he gets halfway, he’s walking out of the forest."
+        }
+  ],
+
+  "riddles": {
+    "fire": [
+        {
+        "riddle": "Feed me and I live, give me drink and I die. What am I?",
+        "answer": "fire"
+        },
+        {
+        "riddle": "You are in a dark room with a candle, a wood stove, and a gas lamp. You only have one match, so what do you light first?",
+        "determiner": "The",
+        "answer": "match"
+        },
+        {
+        "riddle": "Always wax, yet always wane: I melt, succumbed to the flame. Lighting darkness, with fate unblest, I soon devolve to shapeless mess. What am I?",
+        "determiner": "A",
+        "answer": "candle"
+        }
+    ],
+
+    "electricity": [
+        {
+        "riddle": "What can fill a room but takes up no space?",
+        "answer": "light"
+        },
+        {
+        "riddle": "I can be found inside a lamp or on a chandelier. In cartoons I’m seen over heads when there’s a great idea. What am I?",
+        "determiner": "A",
+        "answer": "light bulb"
+        },
+        {
+        "riddle": "I drift forever with the current down these long canals they’ve made, tame, yet wild, I run elusive. Before I came, the world was darker, colder, sometimes rougher, true. But though I might make living easy, I’m good at killing people too. What am I?",
+        "answer": "electricity"
+        }
+    ],
+
+    "food": [
+        {
+        "riddle": "What dessert loves to yell and shout?",
+        "answer": "ice cream"
+        },
+        {
+        "riddle": "Remove six letters from this sequence to reveal a familiar English word. BSAINXLEATNTEARS",
+        "answer": "bananas"
+        },
+        {
+        "riddle": "A box without hinges, lock or key, yet golden treasure lies within. What is it?",
+        "determiner": "An",
+        "answer": "egg"
+        },
+        {
+        "riddle": "Alive without breath, as cold as death, never thirsty, ever drinking, clad in mail, never clinking, drowns on dry land, thinks an island is a mountain, thinks a fountain is a puff of air. What is it?",
+        "determiner": "A",
+        "answer": "fish"
+        },
+        {
+        "riddle": "My first is twice in apple but not once in tart. My second is in liver but not in heart. My third is in giant and also in ghost. Whole I’m best when I am roast. What am I?",
+        "determiner": "A",
+        "answer": "pig"
+        },
+        {
+        "riddle": "Take off my skin and I won’t cry, but you will. What am I?",
+        "determiner": "An",
+        "answer": "onion"
+        },
+        {
+        "riddle": "What kind of room has no walls or corners?",
+        "determiner": "A",
+        "answer": "mushroom"
+        }
+    ],
+
+    "book": [
+        {
+        "riddle": "David’s parents have three sons: Snap, Crackle, and ____?",
+        "answer": "David"
+        },
+        {
+        "riddle": "What building has the most stories?",
+        "determiner": "A",
+        "answer": "library"
+        },
+        {
+        "riddle": "I am the beginning of the end, and the end of time and space. I am essential to creation, and I surround every place. What am I?",
+        "determiner": "The",
+        "answer": "letter e"
+        },
+        {
+        "riddle": "What has words but never speaks?",
+        "determiner": "A",
+        "answer": "book"
+        },
+        {
+        "riddle": "What five-letter word becomes shorter when you add two letters to it?",
+        "answer": "short"
+        },
+        {
+        "riddle": "What word is spelled incorrectly in every dictionary?",
+        "answer": "incorrectly"
+        },
+        {
+        "riddle": "What gets sharper the more you use it?",
+        "answer": "brain or mind"
+        }
+    ],
+
+    "globe": [
+        {
+        "riddle": "I have cities but no houses, forests but no trees, and rivers but no water. What am I?",
+        "determiner": "A",
+        "answer": "map"
+        },
+        {
+        "riddle": "I have no wings, but I can fly. And I have no eyes, but I can cry. What am I?",
+        "determiner": "A",
+        "answer": "cloud"
+        },
+        {
+        "riddle": "I run all day but never walk. I have a mouth but never talk. I have a bed but never sleep. I have a head but never weep. What am I?",
+        "determiner": "A",
+        "answer": "river"
+        },
+        {
+        "riddle": "At night they come without being fetched, and by day they are lost without being stolen.",
+        "answer": "stars"
+        },
+        {
+        "riddle": "I am so simple that I can only point, yet I guide people all over the world.",
+        "answer": "compass"
+        }
+    ],
+
+    "mirror": [
+        {
+        "riddle": "What belongs to you but others use it more than you do?",
+        "determiner": "Your",
+        "answer": "name"
+        },
+        {
+        "riddle": "If you drop me, I’m sure to crack, but give me a smile and I’ll always smile back. What am I?",
+        "determiner": "A",
+        "answer": "mirror"
+        },
+        {
+        "riddle": "I follow you all the time and copy your every move, but you can’t touch me or catch me. What am I?",
+        "determiner": "Your",
+        "answer": "shadow"
+        },
+        {
+        "riddle": "People are hired to get rid of me. I’m often hiding under your bed. In time I’ll always return you see. Bite me and you’re surely dead.",
+        "answer": "dust"
+        },
+        {
+        "riddle": "I sometimes run, but I can’t walk. What am I?",
+        "determiner": "A",
+        "answer": "nose"
+        }
+    ],
+
+    "time": [
+        {
+        "riddle": "This thing all things devours: Birds, beasts, trees, flowers; gnaws iron, bites steel; grinds hard stones to meal; slays king, ruins town, and beats high mountain down.",
+        "answer": "time"
+        },
+        {
+        "riddle": "What’s always in front of you but can’t be seen?",
+        "determiner": "The",
+        "answer": "future"
+        },
+        {
+        "riddle": "What has a face and two hands but no arms or legs?",
+        "determiner": "A",
+        "answer": "clock"
+        },
+        {
+        "riddle": "What goes on four legs in the morning, on two legs at noon, and on three legs in the evening?",
+        "determiner": "A",
+        "answer": "human or man"
+        }
+    ],
+
+    "room": [
+        {
+        "riddle": "I have hands that wave at you, though I never say goodbye. It's cool for you to be with me, especially when I say, \"HI.\" What am I?",
+        "determiner": "A",
+        "answer": "fan"
+        },
+        {
+        "riddle": "What invention lets you look right through a wall?",
+        "determiner": "A",
+        "answer": "window"
+        },
+        {
+        "riddle": "What has legs but can’t walk?",
+        "answer": "table or chair"
+        },
+        {
+        "riddle": "What kind of coat is always wet when you put it on?",
+        "determiner": "A",
+        "answer": "coat of paint"
+        }
+    ],
+
+    "graveyard": [
+        {
+        "riddle": "Poor people have it. Rich people need it. If you eat it, you die. What is it?",
+        "answer": "nothing"
+        },
+        {
+        "riddle": "Some try to hide, some try to cheat, but time will show, we always will meet. Try as you might, to guess my name, I promise you’ll know, when you I do claim.",
+        "answer": "death"
+        },
+        {
+        "riddle": "Who has married many women but was never married?",
+        "determiner": "A",
+        "answer": "priest"
+        },
+        {
+        "riddle": "What goes away as soon as you talk about it?",
+        "answer": "silence"
+        }
+    ],
+
+    "swimming_in_cold_water": [
+        {
+        "riddle": "What can you catch but never throw?",
+        "determiner": "A",
+        "answer": "cold"
+        },
+        {
+        "riddle": "What’s as light as a feather, but even the world’s strongest person couldn’t hold it for long?",
+        "determiner": "Their",
+        "answer": "breath"
+        },
+        {
+        "riddle": "I make the lakes like marble floors; I bridge the brooks for children's feet; I gather in the winter's cold, and drive away the summer's heat.",
+        "answer": "ice"
+        },
+        {
+        "riddle": "What do you get when you cross a snowman and a vampire?",
+        "answer": "frostbite"
+        }
+    ],
+
+    "wishing_you_had_technology": [
+        {
+        "riddle": "What has keys but no locks, space but no room, and you can enter but can’t go in?",
+        "determiner": "A",
+        "answer": "keyboard"
+        },
+        {
+        "riddle": "What kind of band never plays music?",
+        "determiner": "A",
+        "answer": "rubber band"
+        }
+    ],
+
+    "taking_a_bath": [
+        {
+        "riddle": "I’m full of holes, yet I’m full of water. What am I?",
+        "determiner": "A",
+        "answer": "sponge"
+        },
+        {
+        "riddle": "What gets wetter as it dries?",
+        "determiner": "A",
+        "answer": "towel"
+        }
+    ],
+
+    "extra": [
+        {
+        "riddle": "If you have me, you want to share me. If you share me, you haven’t got me. What am I?",
+        "determiner": "A",
+        "answer": "secret"
+        },
+        {
+        "riddle": "The cost of making only the maker knows, valueless if bought, but sometimes traded. A poor man may give one as easily as a king. When one is broken pain and deceit are assured.",
+        "answer": "promise"
+        },
+        {
+        "riddle": "The more you take away, the larger I become. What am I?",
+        "determiner": "A",
+        "answer": "hole"
+        }
+    ]
+ }
+}
