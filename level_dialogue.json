@@ -1,24 +1,36 @@
 {
     "beginning": [
         {
-            "dialogue": "",
+            "dialogue": "You are an antique hunter, and a good one at that. You've fallen on hard times, \nyou haven't had any big finds in a while. You get a tip of a house that is incredibly old, \nand has a high chance of having antiques.It is located in a clearing in the middle of an ancient forest. \nBut apparently it is the lair of a terrible beast, one that scares away all who try to loot the place. \nWith nothing to lose, and not believing in folktales, you decide to explore this old house. \nYou make your way deep into the forest...",
             "action1": "",
-            "action2": ""
+            "event1": "",
+            "eventid1": "",
+            "action2": "",
+            "event2": "",
+            "eventid2": ""
         }
     ],
     "level1": [
         {
-            "dialogue": "",
-            "action1": "",
-            "action2": ""
+            "dialogue": "You finally make it to the front door of the decrepit house. All the house's wooden walls are gray with age,\n and it looks like the roof will collapse at any moment. But you gather your nerves and turn the door handle.\n As you step in to take a look around, the smell of mold and mildew attacks your nose.\n \"This definitely can't be good for my health\", you think to yourself.\n",
+            "action1": "1) Look around for a light switch.",
+            "event1": "You look around for a light switch but you realize the house in the middle of nowhere, \nand probably too old to have electricity.",
+            "eventid1": "switch",
+            "action2": "2) Look for a lantern or torch you can light.",
+            "event2": "You scan around for a lantern but find nothing except cobwebs and old pieces of wood, probably from the house itself.",
+            "eventid2": "lantern"
         }
     ],
 
     "level2": [
         {
-            "dialogue": "",
-            "action1": "",
-            "action2": ""
+            "dialogue": "After scanning the main room for a while, a pleasent smell suddenly wafts towards your face.\n You turn your head to an old table, and are surprised to find a delicious-looking spread of food on it.\n In the corner of the table, there seems to be an antique pocket watch.",
+            "action1": "1) You sit down on the wooden chair at the table and eat a meal.",
+            "event1": "The food tastes as good as it smells, and now you're completely stuffed.",
+            "eventid1": "food",
+            "action2": "2) You take the pocket watch.",
+            "event2": "You look at the pocket watch and see that it is indeed very old. It doesn’t work anymore, but it could probably fetch a decent price.",
+            "eventid2": "watch"
         }        
     ],
 
