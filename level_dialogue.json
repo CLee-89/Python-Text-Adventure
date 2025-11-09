@@ -36,20 +36,24 @@
 
     "level3": [
         {
-            "dialogue": "",
-            "action1": "",
-            "action2": ""
+            "dialogue": "You walk into another room and see a globe of the world on an old dresser, with a broken mirror hanging on the wall",
+            "action1": "1) You walk up to the dresser to get a closer look at the globe.",
+            "event1": "It is indeed a globe of the Earth, you decide to take the globe",
+            "eventid1": "globe",
+            "action2": "2) You walk up to the old, broken mirror to see if you can catch your reflection.",
+            "event2": "You see a blurry, foggy reflection of yourself. The mirror appears to have once been an elegant looking glass. You decide to take it.",
+            "eventid2": "mirror"
         }
     ],
     
      "level4": [
         {
-            "dialogue": "",
-            "action1": "",
+            "dialogue": "You start to feel tired. You can either rest a bit or search the dresser for something.",
+            "action1": "1) You decide to take a rest on the floor.",
             "event1": "",
-            "eventid1": "",
-            "action2": "2) You take the pocket watch.",
-            "event2": "You look at the pocket watch and see that it is indeed very old. It doesn’t work anymore, but it could probably fetch a decent price.",
+            "eventid1": "room",
+            "action2": "2) You push forward and search the dresser.",
+            "event2": "You decide to check the dresser and find a gold pocket watch inside. It’s old and no longer works, but it could likely fetch a decent price.",
             "eventid2": "watch"
         }
     ],       
@@ -58,7 +62,11 @@
         {
             "dialogue": "",
             "action1": "",
-            "action2": ""
+            "event1": "grave",
+            "eventid1": "",
+            "action2": "",
+            "event2": "water",
+            "eventid2": ""
         }
     ],
 
@@ -66,7 +74,11 @@
         {
             "dialogue": "",
             "action1": "",
-            "action2": ""
+            "event1": "tech",
+            "eventid1": "",
+            "action2": "",
+            "event2": "bath",
+            "eventid2": ""
         }
     ],
 
@@ -74,7 +86,11 @@
         {
             "dialogue": "",
             "action1": "",
-            "action2": ""
+            "event1": "",
+            "eventid1": "",
+            "action2": "",
+            "event2": "",
+            "eventid2": ""
         }
     ],
 
@@ -82,7 +98,11 @@
         {
             "dialogue": "",
             "action1": "",
-            "action2": ""
+            "event1": "",
+            "eventid1": "",
+            "action2": "",
+            "event2": "",
+            "eventid2": ""
         }
     ],
 
@@ -90,7 +110,11 @@
         {
             "dialogue": "",
             "action1": "",
-            "action2": ""
+            "event1": "",
+            "eventid1": "",
+            "action2": "",
+            "event2": "",
+            "eventid2": ""
         }
     ],
 
@@ -98,7 +122,11 @@
         {
             "dialogue": "",
             "action1": "",
-            "action2": ""
+            "event1": "",
+            "eventid1": "",
+            "action2": "",
+            "event2": "",
+            "eventid2": ""
         }
     ]
 }
