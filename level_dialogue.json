@@ -24,13 +24,13 @@
 
     "level2": [
         {
-            "dialogue": "After scanning the main room for a while, a pleasent smell suddenly wafts towards your face.\n You turn your head to an old table, and are surprised to find a delicious-looking spread of food on it.\n In the corner of the table, there seems to be an antique pocket watch.",
+            "dialogue": "After scanning the main room for a while, a pleasent smell suddenly wafts towards your face.\n You turn your head to an old table, and are surprised to find a delicious-looking spread of food on it.\n On a bookshelf, there sits an old book.",
             "action1": "1) You sit down on the wooden chair at the table and eat a meal.",
             "event1": "The food tastes as good as it smells, and now you're completely stuffed.",
             "eventid1": "food",
-            "action2": "2) You take the pocket watch.",
-            "event2": "You look at the pocket watch and see that it is indeed very old. It doesn’t work anymore, but it could probably fetch a decent price.",
-            "eventid2": "watch"
+            "action2": "2) You pick up the book.",
+            "event2": "The book is an old novel, and you think it may be worth something, so you decide to keep it. Out of curiousity, you start to read the first few pages.",
+            "eventid2": "book"
         }        
     ],
 
@@ -46,7 +46,11 @@
         {
             "dialogue": "",
             "action1": "",
-            "action2": ""
+            "event1": "",
+            "eventid1": "",
+            "action2": "2) You take the pocket watch.",
+            "event2": "You look at the pocket watch and see that it is indeed very old. It doesn’t work anymore, but it could probably fetch a decent price.",
+            "eventid2": "watch"
         }
     ],       
     
