@@ -1,13 +1,13 @@
 import print_art
-import print_riddle
+import pick_riddle
 
-data = print_riddle.load_data("riddles.json")
+riddle_db = pick_riddle.load_data("riddles.json")
 
 while True:
     print(print_art.get_art("pocket_watch"))
 
     # Example usage
-    print_riddle.print_random_joke(data)
-    print_riddle.print_random_riddle(data)
+    pick_riddle.print_random_joke(riddle_db)
+    pick_riddle.print_random_riddle(riddle_db)
 
     break
