@@ -1,5 +1,5 @@
 import json
-import os
+import os, sys
 import platform
 import pick_riddle
 import print_art
@@ -20,6 +20,14 @@ riddles_asked = 0
 event_ids = []
 response_map = {0: 1, 2: 2, 5: 3}
 end_game_intro_played = False
+
+def resource_path(relative_path):
+    """ Get the absolute path to a resource, works for dev and PyInstaller """
+    try:
+        base_path = sys._MEIPASS  # PyInstaller temp folder
+    except AttributeError:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
 
 # Define functions for waiting for key press and clearing screen based on OS
 if os_name == "Windows":
@@ -67,14 +75,15 @@ def reset_globals():
 
 # Function to load JSON data from a file
 def load_data(filename):
+    path = resource_path(filename)
     # Load riddles and jokes from a JSON file, "r" for read, encoding in utf-8.
-    with open(filename, "r", encoding="utf-8") as f:
+    with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 # Load level dialogue data using load_data function
-data = load_data("level_dialogue.json")
+data = load_data("assets/level_dialogue.json")
 # Load riddle database using load_data function from pick_riddle.py
-riddle_db = pick_riddle.load_data("riddles.json")
+riddle_db = pick_riddle.load_data("assets/riddles.json")
 
 # Function to check if player's answer matches the riddle answer
 def riddle_check(riddle_answer, player_answer):

@@ -1,14 +1,24 @@
 import random
 import json
+import os, sys
+
+def resource_path(relative_path):
+    # PyInstaller sets sys._MEIPASS to the temp folder when running EXE
+    if hasattr(sys, "_MEIPASS"):
+        base_path = sys._MEIPASS
+    else:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
 
 # Function to load data from a JSON file
 def load_data(filename):
     # Load riddles and jokes from a JSON file, "r" for read, encoding in utf-8.
-    with open(filename, "r", encoding="utf-8") as f:
+    path = resource_path(filename)
+    with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 # Load riddle database using load_data function
-data = load_data("riddles.json")
+data = load_data("assets/riddles.json")
 
 # Function that picks random joke and returns riddle and answer
 def pick_random_joke(data):

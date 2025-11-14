@@ -1,9 +1,19 @@
+import os, sys
 import json
 
-# Opens ascii art json using utf-8 encoding, loads it into ascii_art_db
-with open("ascii_art.json", encoding="utf-8") as f:
-    ascii_art_db = json.load(f)
+def resource_path(relative_path):
+    # PyInstaller sets sys._MEIPASS to the temp folder when running EXE
+    if hasattr(sys, "_MEIPASS"):
+        base_path = sys._MEIPASS
+    else:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
 
+json_file = resource_path("assets/ascii_art.json")
+# Opens ascii art json using utf-8 encoding, loads it into ascii_art_db
+with open(json_file, encoding="utf-8") as f:
+    ascii_art_db = json.load(f)
+    
 # Function to get art from art database
 def get_art(name):
     art_entry = ascii_art_db.get(name)
