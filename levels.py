@@ -128,24 +128,22 @@ def level_function(level):
                 wait_key()
                 
                 end_game_intro_played = True
-
-
-            if riddles_asked in response_map:
-                response_number = response_map[riddles_asked]
-                print("Sphinx:", riddle_db["responses"][0].get(f"inter{response_number}", ""), '\n')
-                wait_key()
-                print("You:", riddle_db["responses"][0].get(f"player_response{response_number}", ""), '\n')
-                wait_key()
-                joke_riddle, joke_answer = pick_riddle.pick_random_joke(riddle_db)
-                print("Sphinx:", joke_riddle, '\n')
-                wait_key()
-                print("Sphinx:", joke_answer, '\n')
-                wait_key()
-                print("Sphinx:", riddle_db["responses"][0].get(f"enemy_response{response_number}", ""), '\n')
-                wait_key()
                 
-
             for i in range(len(riddles)):
+                if riddles_asked in response_map:
+                    response_number = response_map[riddles_asked]
+                    print("Sphinx:", riddle_db["responses"][0].get(f"inter{response_number}", ""), '\n')
+                    wait_key()
+                    print("You:", riddle_db["responses"][0].get(f"player_response{response_number}", ""), '\n')
+                    wait_key()
+                    joke_riddle, joke_answer = pick_riddle.pick_random_joke(riddle_db)
+                    print("Sphinx:", joke_riddle, '\n')
+                    wait_key()
+                    print("Sphinx:", joke_answer, '\n')
+                    wait_key()
+                    print("Sphinx:", riddle_db["responses"][0].get(f"enemy_response{response_number}", ""), '\n')
+                    wait_key()
+
                 determiner, riddle_string = riddles[i]
                 riddle_answer = riddle_answers[i]
                 clear_screen()
