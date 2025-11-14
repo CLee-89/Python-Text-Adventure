@@ -1,11 +1,13 @@
 import random
 import json
 
+# Function to load data from a JSON file
 def load_data(filename):
     # Load riddles and jokes from a JSON file, "r" for read, encoding in utf-8.
     with open(filename, "r", encoding="utf-8") as f:
         return json.load(f)
 
+# Load riddle database using load_data function
 data = load_data("riddles.json")
 
 # Function that picks random joke and returns riddle and answer

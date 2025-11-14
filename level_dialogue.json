@@ -85,11 +85,11 @@
             "action2": "2) You find nothing, but you start to think that a shower would feel lovely right now.",
             "event2": "Picturing yourself relaxing in a nice hot bath, you take your leave.",
             "eventid2": "bath",
-            "next_level": "end game"
+            "next_level": "end_game"
         }
     ],
 
-    "end game": [
+    "end_game": [
         {
             "dialogue1": "You exit the house and make your way back through the forest, feeling satisfied with your finds. \nAs you reach the edge of the woods, you take one last look back at the old house, now shrouded in darkness. \nYou can't help but wonder about the mysteries it holds, but for now, you're content with the treasures you've gathered. \nWith a sense of accomplishment, you head back to civilization, eager to see what adventures await you next...",
             "dialogue2": "As you leave the premises, a sudden wave of light-headedness washes over you. Your vision blurs, and you are on the verge of collapse. \nYou try to calm your nerves and gather yourself. The dizziness subsides, and as your sight clears, you find yourself standing in a strange Egyptian-style tomb.",
@@ -103,49 +103,35 @@
 
     "bad_end": [
         {
-            "dialogue": "",
-            "action1": "",
-            "event1": "",
-            "eventid1": "",
-            "action2": "",
-            "event2": "",
-            "eventid2": ""
-        }
-    ],
-
-    "normal_end": [
-        {
-            "dialogue": "",
-            "action1": "",
-            "event1": "",
-            "eventid1": "",
-            "action2": "",
-            "event2": "",
-            "eventid2": ""
+            "dialogue1": "You failed to answer the riddles correctly. The Sphinx's eyes glow with disappointment, and a dark aura surrounds you. \nYou feel a sudden chill as the Sphinx's voice echoes through the tomb, 'Your lack of wisdom has doomed you.' \nThe Sphinx slowly rises to his feet, towering over you as you contemplate your end.",
+            "dialogue2": "With one swift motion, the Sphinx front kicks you in the stomach. 'Suffer the consequences of your hubris!' You clutch your stomach in pain. \n You double over gasping for air. As you lay there, staring at the Sphinx's paws, you close your eyes do to the ache in your stomach. \nAs you open them again, you find yourself lying on the grass infront of the delapidated house.",
+            "dialogue3": "You check your backpack and find that all the artifacts you have collected are gone. A slight sense of loss washes over you, but you are just grateful to be alive. \nYou decide to leave the area quickly, not wanting to risk another encounter with the Sphinx.",
+            "dialogue4": "Days later, as you sit on your couch thinking about what could have been, you find yourself disappointed at the events that have transpired. \nYou lost the artifacts, items that were even more valuable than you initially thought. \nIn the moment, you couldn't think straight to give the correct answers. In hindsight a lot of those riddles were very easy. \nAnd to top it all off, the \"terrible punishment\" was anticlimactic...",
+            "dialogue5": "Over all this was a missed opportunity you would like to forget. Even though you are back to square one, and full of disappointment, \nyou continue to search for more opportunites to find antiques, hoping for a better outcome next time....",
+            "dialogue6": "Bad End"
         }
     ],
 
     "good_end": [
         {
-            "dialogue": "",
-            "action1": "",
-            "event1": "",
-            "eventid1": "",
-            "action2": "",
-            "event2": "",
-            "eventid2": ""
+            "dialogue1": "You have answered most of the riddles correctly. The Sphinx's eyes glow with approval, and a warm aura surrounds you. \nYou feel a sudden warmth as the Sphinx's voice echoes through the tomb, 'Your wisdom has been rewarded.' \nThe Sphinx slowly rises to his feet, towering over you as you contemplate your end.",
+            "dialogue2": "The Sphinx signals you towards a door. As you walk through it you begin to see the familiar surroundings of the delapidated house. \nYou check your backpack and find that all the artifacts you have collected are still there, now radiating a faint magical aura.",
+            "dialogue3": "A sense of accomplishment washes over you as you realize that the artifacts you found are now even more valuable than before. \nYou decide to leave the area quickly, eager to return to civilization and share your incredible story.",
+            "dialogue4": "Days later, in your fancy new apartment, you sit on your couch thinking about the incredible adventure you had. \nYou smile to yourself, knowing that you were able to overcome the challenges presented by the Sphinx and emerge victorious. \nThe artifacts you found have made you a wealthy person, and you can't wait to see what other adventures await you in the future....",
+            "dialogue5": "Good End"
         }
     ],
 
     "perfect_end": [
         {
-            "dialogue": "",
-            "action1": "",
-            "event1": "",
-            "eventid1": "",
-            "action2": "",
-            "event2": "",
-            "eventid2": ""
+            "dialogue1": "You have answered all the riddles correctly. The Sphinx's eyes glow with surprise, and a radiant aura surrounds you. \nYou feel an excitement coming from the Sphinx as the Sphinx's voice echoes through the tomb, 'You are indeed worthy of these magic items!' \nThe Sphinx slowly rises to his feet, towering over you as you contemplate your end.",
+            "dialogue2": "The Sphinx lays both of his giant paws gently on your shoulders. 'You have proven yourself to be wise beyond measure. \nI shall grant you a special boon for your exceptional performance.' With that, a bright light envelops you.",
+            "dialogue3": "'Go now,' The Sphinx says, as he signals you towards a door. As you walk through it you begin to see the familiar surroundings of the delapidated house. \nYou check your backpack and find that all the artifacts you have collected are still there, now radiating a faint magical aura. \nYou seem strangely connected to this magical aura, and ponder about the boon the Sphinx bestowed upon you.",
+            "dialogue4": "A sense of accomplishment washes over you as you realize that the artifacts you found are now even more valuable than before. \nYou decide to leave the area quickly, eager to return to civilization and share your incredible story.",
+            "dialogue5": "Days later, in your old apartment, you sit on your couch thinking about the incredible adventure you had. \nYou smile to yourself, knowing that you were able to overcome the challenges presented by the Sphinx and emerge victorious. \n The artifacts you found seem to hum with a magical energy, and you feel a newfound power coursing through your veins. \nThough you haven't tried using it yet, you know that this power will serve to make your life that much more interesting.",
+            "dialogue6": "You look at your housemate, your dog 'Rufus', and say 'Life's about to get a whole lot stranger - in the best possible way, right Rufus?' \nRufus wags his tail in response.",
+            "dialogue7": "'I do believe so,' says Rufus. You both look at each other for a moment and start laughing together, excited for the adventures that lie ahead.",
+            "dialogue8": "Perfect Ending"
         }
     ]
 }

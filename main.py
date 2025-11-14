@@ -1,19 +1,33 @@
+# Text Adventure Game - created by Christopher Lee
 from pdb import main
-import print_art
-import pick_riddle
 import levels
-
-riddle_db = pick_riddle.load_data("riddles.json")
 
 
 def main():
-    current_level = "beginning"
+    quit = False
 
-    while current_level is not None:
-        #print(print_art.get_art("pocket_watch"))
-            current_level = levels.level_function(current_level)
+    # Main game loop
+    while quit == False:
+        current_level = "beginning"
 
-    print("The End.")
+        # Level loop
+        while current_level is not None:
+                current_level = levels.level_function(current_level)
 
+        # Asks if player wants to play again
+        play_again = ""
+        while play_again not in ["y", "n"]:
+            print("Game Over. Do you wish to play again? (y/n)")
+            play_again = input().strip().lower()
+
+            if play_again == "y":
+                break
+            elif play_again == "n":
+                quit = True
+                
+        # Resets global variables in levels.py
+        levels.reset_globals()
+        
+# Calls main function to start game
 if __name__ == "__main__":
     main()

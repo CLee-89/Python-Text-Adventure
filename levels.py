@@ -2,21 +2,26 @@ import json
 import os
 import platform
 import pick_riddle
+import print_art
 
+# Determine operating system
 os_name = platform.system()
 
 keys = None
 player = "You: "
 enemy = "Sphinx: "
 
+# Global variables to track riddles and game state
 riddles = []
 riddle_intros = []
 riddle_answers = []
 riddles_solved = 0
 riddles_asked = 0
+event_ids = []
 response_map = {0: 1, 2: 2, 5: 3}
 end_game_intro_played = False
 
+# Define functions for waiting for key press and clearing screen based on OS
 if os_name == "Windows":
     import msvcrt
 
@@ -46,15 +51,32 @@ elif os_name == "Linux" or os_name == "Darwin":
 else:
     raise Exception("Unsupported OS")
 
+# Function to reset global variables
+def reset_globals():
+    global riddles, riddle_intros, riddle_answers
+    global riddles_solved, riddles_asked, event_ids
+    global end_game_intro_played
+
+    riddles = []
+    riddle_intros = []
+    riddle_answers = []
+    riddles_solved = 0
+    riddles_asked = 0
+    event_ids = []
+    end_game_intro_played = False
+
+# Function to load JSON data from a file
 def load_data(filename):
     # Load riddles and jokes from a JSON file, "r" for read, encoding in utf-8.
     with open(filename, "r", encoding="utf-8") as f:
         return json.load(f)
-    
+
+# Load level dialogue data using load_data function
 data = load_data("level_dialogue.json")
 # Load riddle database using load_data function from pick_riddle.py
 riddle_db = pick_riddle.load_data("riddles.json")
 
+# Function to check if player's answer matches the riddle answer
 def riddle_check(riddle_answer, player_answer):
     # Format player answer to have no spaces and be lowercase
     player_answer = player_answer.replace(" ", "").lower()
@@ -67,10 +89,11 @@ def riddle_check(riddle_answer, player_answer):
     # Check if player answer matches riddle answer
     return player_answer == riddle_answer
 
+# Function to handle level logic based on current level
 def level_function(level):
-
     global riddles_asked, riddles_solved, end_game_intro_played
 
+    # Use match-case to handle different levels
     match level:
         case "beginning":
             clear_screen()
@@ -78,7 +101,7 @@ def level_function(level):
             print(dialogue, '\n')
             wait_key()
             return data[level][0].get("next_level", "")
-        case "end game":
+        case "end_game":
             end_game_data = data[level][0]
             num_dialogues = len(end_game_data)
 
@@ -87,6 +110,7 @@ def level_function(level):
             if not end_game_intro_played:
                 for i in range(num_dialogues):
                     if (i + 1) > 3:
+                        print(print_art.get_art("sphinx"), '\n')
                         print("Sphinx:", end_game_data[f"dialogue{i+1}"], '\n')
                     else: 
                         print(end_game_data[f"dialogue{i+1}"], '\n')
@@ -116,9 +140,10 @@ def level_function(level):
                 determiner, riddle_string = riddles[i]
                 riddle_answer = riddle_answers[i]
                 clear_screen()
-                print_art.get_art()
+                print(print_art.get_art(event_ids[riddles_asked]), '\n')
                 print("Sphinx:", riddle_intros[riddles_asked], '\n')
                 wait_key()
+
                 print(f"Sphinx: {riddle_string}\n")
                 riddles_asked += 1
 
@@ -126,11 +151,50 @@ def level_function(level):
 
                 if riddle_check(riddle_answer, guess):
                     riddles_solved += 1
+                    print("Sphinx: Correct!.\nyou have answered", riddles_solved, " out of ", riddles_asked, " correctly so far.\n")
+                    wait_key()
+                else:
+                    print("Sphinx: Incorrect!\nyou have answered", riddles_solved, " out of ", riddles_asked, " correctly so far.\n")
+                    wait_key()
 
-                print ("correct answers: ", riddles_solved, " out of ", riddles_asked)
+            if riddles_solved == len(riddles):
+                return "perfect_end"
+            elif riddles_solved >= 4:
+                return "good_end"
+            else:
+                return "bad_end"
+        case "bad_end":
+            bad_ending_data = data[level][0]
+            num_dialogues = len(bad_ending_data)
+            clear_screen()
+            for i in range(num_dialogues):
+                if i == 0:
+                    print(print_art.get_art("sphinx"), '\n')
+                elif i == 1:
+                    print(print_art.get_art("death"), '\n')
+                print(bad_ending_data[f"dialogue{i+1}"], '\n')
                 wait_key()
-
-            return "end_game"
+            return None
+        case "good_end":
+            good_end_data = data[level][0]
+            num_dialogues = len(good_end_data)
+            clear_screen()
+            for i in range(num_dialogues):
+                if i == num_dialogues - 2:
+                    print(print_art.get_art("money"), '\n')
+                print(good_end_data[f"dialogue{i+1}"], '\n')
+                wait_key()
+            return None
+        case "perfect_end":
+            perfect_end_data = data[level][0]
+            num_dialogues = len(perfect_end_data)
+            clear_screen()
+            for i in range(num_dialogues):
+                if i == num_dialogues - 2:
+                    print(print_art.get_art("dog"), '\n')
+                print(perfect_end_data[f"dialogue{i+1}"], '\n')
+                wait_key()
+            return None
         case _:
             # Grabs data from data, returns "" if key is not found
             dialogue = data[level][0].get("dialogue", "")
@@ -161,6 +225,7 @@ def level_function(level):
              # Print corresponding event based on user choice
             print(f'{event1 if action_choice == "1" else event2}\n')
             eventid = data[level][0].get("eventid1", "") if action_choice == "1" else data[level][0].get("eventid2", "")
+            event_ids.append(eventid)
             wait_key()
 
             # Get riddle parts from pick_riddle.py
@@ -178,4 +243,5 @@ def level_function(level):
             riddles.append((riddle_determiner, riddle_string))
             riddle_intros.append(riddle_db["responses"][0].get(eventid, ""))
 
+            # Return next level
             return data[level][0].get("next_level", "")

@@ -163,7 +163,7 @@
         {
         "riddle": "I can be found inside a lamp or on a chandelier. In cartoons I’m seen over heads when there’s a great idea. What am I?",
         "determiner": "A",
-        "answer": "light bulb"
+        "answer": "light bulb|bulb"
         },
 
         {
@@ -330,7 +330,7 @@
         {
         "riddle": "What has a face and two hands but no arms or legs?",
         "determiner": "A",
-        "answer": "clock"
+        "answer": "clock|watch|wristwatch|pocketwatch"
         },
 
         {
@@ -355,7 +355,7 @@
 
         {
         "riddle": "What has legs but can’t walk?",
-        "answer": "table or chair"
+        "answer": "table|chair"
         },
 
         {
