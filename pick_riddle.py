@@ -6,6 +6,8 @@ def load_data(filename):
     with open(filename, "r", encoding="utf-8") as f:
         return json.load(f)
 
+data = load_data("riddles.json")
+
 # Function that picks random joke and returns riddle and answer
 def pick_random_joke(data):
     # Print a random joke from the JSON data.
@@ -23,27 +25,26 @@ def pick_random_joke(data):
     answer = joke.get("answer", "Unknown")
 
     return riddle, answer
-    print(f"JOKE:\n{joke['riddle']}")
-    print(f" {joke['answer']}\n")
 
 # Function that picks random riddle from given category: returns riddle, determiner, and answer
-def pick_random_riddle(data, category=None):
+def pick_random_riddle(category=None):
     # Gets "riddles" data from riddles.json
     riddles = data.get("riddles", {})
 
-    # If riddles is emtpy display error message and return
+    # Check if riddles exist
     if not riddles:
         print("No riddles found.")
         return
     
-    # If category is not None
+    # Check if category is provided
     if category:
-        # If category is missing display error message and return
+        # Check if the provided category exists in riddles.json
         if category not in riddles:
             print(f"Category '{category}' not found.")
             return
     else:
-        # Pick a random category
+        # No category provided
+        # Pick a random category from the available keys in riddles.json
         category = random.choice(list(riddles.keys()))
 
     # Picks out riddles from specific category 
@@ -56,7 +57,5 @@ def pick_random_riddle(data, category=None):
     # Gets answer from riddle: If "answer" exists answer is "answer", if not it is Unknown
     answer = riddle.get("answer", "Unknown")
 
+    # Returns 'riddle' part of the variable called riddle, determiner, and answer
     return riddle['riddle'], determiner, answer
-
-    print(f"RIDDLE ({category.upper()}):\n{riddle['riddle']}")
-    print(f" {determiner} {answer}".strip() + "\n")

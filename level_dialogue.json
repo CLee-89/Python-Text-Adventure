@@ -7,7 +7,8 @@
             "eventid1": "",
             "action2": "",
             "event2": "",
-            "eventid2": ""
+            "eventid2": "",
+            "next_level": "level1"
         }
     ],
     "level1": [
@@ -15,10 +16,11 @@
             "dialogue": "You finally make it to the front door of the decrepit house. All the house's wooden walls are gray with age,\n and it looks like the roof will collapse at any moment. But you gather your nerves and turn the door handle.\n As you step in to take a look around, the smell of mold and mildew attacks your nose.\n \"This definitely can't be good for my health\", you think to yourself.\n",
             "action1": "1) Look around for a light switch.",
             "event1": "You look around for a light switch but you realize the house in the middle of nowhere, \nand probably too old to have electricity.",
-            "eventid1": "switch",
+            "eventid1": "electricity",
             "action2": "2) Look for a lantern or torch you can light.",
             "event2": "You scan around for a lantern but find nothing except cobwebs and old pieces of wood, probably from the house itself.",
-            "eventid2": "lantern"
+            "eventid2": "fire",
+            "next_level": "level2"
         }
     ],
 
@@ -29,8 +31,9 @@
             "event1": "The food tastes as good as it smells, and now you're completely stuffed.",
             "eventid1": "food",
             "action2": "2) You pick up the book.",
-            "event2": "The book is an old novel, and you think it may be worth something, so you decide to keep it. Out of curiousity, you start to read the first few pages.",
-            "eventid2": "book"
+            "event2": "The book is an old novel, and you think it may be worth something, so you decide to keep it. \nOut of curiousity, you start to read the first few pages.",
+            "eventid2": "book",
+            "next_level": "level3"
         }        
     ],
 
@@ -38,11 +41,12 @@
         {
             "dialogue": "You walk into another room and see a globe of the world on an old dresser, with a broken mirror hanging on the wall",
             "action1": "1) You walk up to the dresser to get a closer look at the globe.",
-            "event1": "It is indeed a globe of the Earth, you decide to take the globe",
+            "event1": "It is indeed a globe of the Earth, you decide to take the globe.",
             "eventid1": "globe",
             "action2": "2) You walk up to the old, broken mirror to see if you can catch your reflection.",
-            "event2": "You see a blurry, foggy reflection of yourself. The mirror appears to have once been an elegant looking glass. You decide to take it.",
-            "eventid2": "mirror"
+            "event2": "You see a blurry, foggy reflection of yourself. The mirror appears to have once been an elegant looking glass. \nYou decide to take it.",
+            "eventid2": "mirror",
+            "next_level": "level4"
         }
     ],
     
@@ -50,35 +54,50 @@
         {
             "dialogue": "You start to feel tired. You can either rest a bit or search the dresser for something.",
             "action1": "1) You decide to take a rest on the floor.",
-            "event1": "",
+            "event1": "You sit on the floor in the of corner the dilapidated house, reminiscing on your journey thus far. \nAfter a while, you decide to get up, feeling refreshed.",
             "eventid1": "room",
             "action2": "2) You push forward and search the dresser.",
-            "event2": "You decide to check the dresser and find a gold pocket watch inside. It’s old and no longer works, but it could likely fetch a decent price.",
-            "eventid2": "watch"
+            "event2": "You decide to check the dresser and find a gold pocket watch inside. It’s old and no longer works, \nbut it could likely fetch a decent price.",
+            "eventid2": "time",
+            "next_level": "level5"
         }
     ],       
     
     "level5": [
         {
-            "dialogue": "",
-            "action1": "",
-            "event1": "grave",
-            "eventid1": "",
-            "action2": "",
-            "event2": "water",
-            "eventid2": ""
+            "dialogue": "After spending a good amount of time looking around the house, you decide to take a look outside. \nIt is late into the night by now, but through the darkness you are able to make out what seems to be a graveyard with a small pond next to it.",
+            "action1": "1) You decide to take a look at the graveyard.",
+            "event1": "Getting closer to what you assume are gravestones, you find yourself infront of a quite ancient looking graveyard. \nA thought crosses your mind, \"There's probably some nice treasure in these graves.\" \nThe idea lingers for a moment before you push it away. Unsettled by where your mind wandered, you head back inside the house.",
+            "eventid1": "graveyard",
+            "action2": "2) You walk closer to the pond to a get a good look at it.",
+            "event2": "You approach the still pond. The crickets chirp from the tall grass around you. \nYou take in the sight when you suddenly notice something shining beneath the moonlit surface of the pond. \nAlready deep into your adventure, you think, \"Getting a little wet wouldn't hurt\", and dive right in. \nThe water is cold and murky, but you feel around the area where the object was and touch something metallic. \nYou grab it and swim up for air. With a loud gasp, you grab your breathe and look at what your holding in your hand. \nIt turns out to be an old half dollar coin. \"This could be worth a fortune,\" you think, feeling that the dive was well worth it.",
+            "eventid2": "water",
+            "next_level": "level6"
         }
     ],
 
     "level6": [
         {
-            "dialogue": "",
-            "action1": "",
-            "event1": "tech",
-            "eventid1": "",
-            "action2": "",
-            "event2": "bath",
-            "eventid2": ""
+            "dialogue": "Since it's getting late into the night, you feel it's almost time to go, but you want to comb the house one more time before leaving.",
+            "action1": "1) You find nothing, but you start to miss modern society.",
+            "event1": "Thinking about whether a new episode of your favorite show has come out, you start heading out.",
+            "eventid1": "technology",
+            "action2": "2) You find nothing, but you start to think that a shower would feel lovely right now.",
+            "event2": "Picturing yourself relaxing in a nice hot bath, you take your leave.",
+            "eventid2": "bath",
+            "next_level": "end game"
+        }
+    ],
+
+    "end game": [
+        {
+            "dialogue1": "You exit the house and make your way back through the forest, feeling satisfied with your finds. \nAs you reach the edge of the woods, you take one last look back at the old house, now shrouded in darkness. \nYou can't help but wonder about the mysteries it holds, but for now, you're content with the treasures you've gathered. \nWith a sense of accomplishment, you head back to civilization, eager to see what adventures await you next...",
+            "dialogue2": "As you leave the premises, a sudden wave of light-headedness washes over you. Your vision blurs, and you are on the verge of collapse. \nYou try to calm your nerves and gather yourself. The dizziness subsides, and as your sight clears, you find yourself standing in a strange Egyptian-style tomb.",
+            "dialogue3": "All sides are lined with torches and hieroglyphs. A strong vortex started to form, picking up all the sand and making it hard to see. \nOnce the swirling subsided, a Sphinx appeared before you, blocking your only way out.",
+            "dialogue4": "Ah, the brave soul who dares venture into my domain! Welcome, traveler, to the realm of riddles and mysteries. \nI am the Sphinx, the guardian of ancient wisdom and the keeper of secrets. To pass through this sacred place, you must prove yourself worthy by answering my riddles. \nFail, and you shall meet a terrible fate. Now, prepare yourself for the challenges that await ahead!",
+            "dialogue5": "Just kidding! Ha ha ha! I'm not that scary, I'm a Sphinx who just loves jokes and riddles. \nIt seems the place you were looting was in a temporal rift between your world and mine!",
+            "dialogue6": "The rift must have opened and teleported you here! But don't worry, I can send you back home. \nIt would be fitting to test if you are indeed worthy of those treasures you stumbled across though. \nAs it seems, while being in the temporal rift between your world and mine, those artifacts have acquired some residual magic from me!\n This makes them far more valuable, but far more dangerous in the wrong hands!",
+            "dialogue7": "I will test your worth by way of riddles! Ha ha ha! One of my greatest joys! Don't worry, this should be entertaining for the both of us!... \nBy the way, I wasn't kidding about the terrible fate part... So be careful with your answers! Ha ha ha!"
         }
     ],
 
