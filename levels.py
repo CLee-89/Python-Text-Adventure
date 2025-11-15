@@ -145,8 +145,14 @@ def level_function(level):
                     wait_key()
                     print("Sphinx:", joke_answer, '\n')
                     wait_key()
-                    print("Sphinx:", riddle_db["responses"][0].get(f"enemy_response{response_number}", ""), '\n')
-                    wait_key()
+                    if riddles_asked != 5:
+                        print("Sphinx:", riddle_db["responses"][0].get(f"enemy_response{response_number}", ""), '\n')
+                        wait_key()
+                    else:
+                        print("Sphinx:", riddle_db["responses"][0].get(f"enemy_response{"3_1"}", ""), '\n')
+                        wait_key()
+                        print("Sphinx:", riddle_db["responses"][0].get(f"enemy_response{"3_2"}", ""), '\n')
+                        wait_key()
 
                 determiner, riddle_string = riddles[i]
                 riddle_answer = riddle_answers[i]
