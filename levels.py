@@ -21,12 +21,16 @@ event_ids = []
 response_map = {0: 1, 2: 2, 5: 3}
 end_game_intro_played = False
 
+# Function to get resource path for files
 def resource_path(relative_path):
-    """ Get the absolute path to a resource, works for dev and PyInstaller """
+    #Get the absolute path to a resource, works for dev and PyInstaller
     try:
-        base_path = sys._MEIPASS  # PyInstaller temp folder
+        # Get the base path from PyInstaller's temp folder
+        base_path = sys._MEIPASS
     except AttributeError:
+        # Get the absolute path to the current directory
         base_path = os.path.abspath(".")
+    # Return the joined path
     return os.path.join(base_path, relative_path)
 
 # Define functions for waiting for key press and clearing screen based on OS
@@ -73,7 +77,7 @@ def reset_globals():
     event_ids = []
     end_game_intro_played = False
 
-# Function to load JSON data from a file
+# Function to load data from a JSON file
 def load_data(filename):
     path = resource_path(filename)
     # Load riddles and jokes from a JSON file, "r" for read, encoding in utf-8.
