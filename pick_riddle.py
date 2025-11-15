@@ -2,12 +2,16 @@ import random
 import json
 import os, sys
 
+# Function to get resource path for files
 def resource_path(relative_path):
     # PyInstaller sets sys._MEIPASS to the temp folder when running EXE
     if hasattr(sys, "_MEIPASS"):
+        # Get the base path from PyInstaller's temp folder
         base_path = sys._MEIPASS
     else:
+        # Get the absolute path to the current directory
         base_path = os.path.abspath(".")
+    # Return the joined path
     return os.path.join(base_path, relative_path)
 
 # Function to load data from a JSON file
